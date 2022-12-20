@@ -1,7 +1,21 @@
 # Default Blueprint Tab
-When clicking through the blueprint screen, the sub tab will always default to the blueprint tab.
-
 The base game always selects the left most sub tab.
+
+This mod makes the blueprint screen's Research Sub Tab "sticky".  If the research sub tab was previously selected, it will remain so when selecting a new top level tab.
+
+Useful when searching through tabs to select the next item to research.
+
+The mod can be set to always select the research tab even when the blueprint window is opened.  This was the default mode for version 1.0.0.
+
+# Settings 
+|Name|Default|Description|
+|--|--|--|
+|AlwaysStartWithResearchTab|false|If true, will always change the sub tab to Research on top tab click.  Otherwise, will only keep the research sub tab open if the previous tab had the Research sub tab open.|
+
+## "Always Start With Research Tab" Note
+Setting the AlwaysStartWithResearchTab to true can make it more difficult to make batch blueprints.  
+
+For example: A user wishes to make multiple Jungle Salads in a row.  With this option disabled, the tab with the Jungle Salad will be opened when the user re-opens the blueprint screen.  Otherwise when reopening the blueprints screen, the research sub tab will be shown, requiring the user to click the tab with the desired recipe each time.
 
 # Installation 
 This mod requires the BepInEx mod loader.
@@ -44,3 +58,9 @@ This method removes this mod, but keeps the BepInEx mod loader and any other mod
 Delete the ```DefaultBluePrintTab.dll``` from the ```<Steam Directory>\steamapps\common\Card Survival Tropical Island\BepInEx\plugins``` directory.
 # Compatibility
 Safe to add and remove from existing saves.
+
+# Change Log
+
+## 1.1.0
+* Changed to only select the Research Sub Tab if it was previously selected.  Makes creating batch recipes easier.
+* Added AlwaysStartWithResearchTab option.
