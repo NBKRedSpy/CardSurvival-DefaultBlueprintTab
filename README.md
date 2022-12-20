@@ -17,6 +17,13 @@ Setting the AlwaysStartWithResearchTab to true can make it more difficult to mak
 
 For example: A user wishes to make multiple Jungle Salads in a row.  With this option disabled, the tab with the Jungle Salad will be opened when the user re-opens the blueprint screen.  Otherwise when reopening the blueprints screen, the research sub tab will be shown, requiring the user to click the tab with the desired recipe each time.
 
+# Changing the Configuration
+All options are contained in the config file which is located at ```<Steam Directory>\steamapps\common\Card Survival Tropical Island\BepInEx\config\DefaultBlueprintTab.cfg```.
+
+The .cfg file will not exist until the mod is installed and then the game is run.
+
+To reset the config, delete the config file.  A new config will be created the next time the game is run.
+
 # Installation 
 This mod requires the BepInEx mod loader.
 
